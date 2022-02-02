@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Ropa Sans", sans-serif;
+}
+
+header {
+  height: 49px;
+  width: 100%;
+
+  display: flex;
+
+  background: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+header > div {
+  width: 100%;
+  max-width: 1080px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bars div {
+  width: 18px;
+  height: 2px;
+  background-color: #aaaaaa;
+}
+
+.bars div + div {
+  margin-top: 3px;
+}
+
+main {
+  min-height: 100vh;
+}
+
+section {
+  width: 100%;
+  padding: 0 80px;
+}
+
+section#home {
+  min-height: 80vh;
+
+  background-image: url("/img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  background-position-x: center;
+
+  margin-top: 15px;
+}
+
+section#prices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+.card {
+  max-width: 256px;
+  background: #eeeeee;
+  border-radius: 15px;
+
+  font-family: Ropa Sans;
+  font-size: 10px;
+}
+
+.card p {
+  font-size: 10px;
+  line-height: 11px;
+
+  color: #555555;
+}
+
+.card .container {
+  padding: 15px;
+}
+
+.card .card-header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+}
+
+.card .price {
+  font-size: 25px;
+  color: #888888;
+}
+
+.card .tag {
+  background-color: #f10;
+  border-radius: 25px;
+  display: flex;
+  width: fit-content;
+  padding: 1px 15px;
+
+  font-size: 20px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.card .tag.green-bg {
+  background: #51d275;
+}
+
+.card .tag.yellow-bg {
+  background: #ebcb21;
+}
